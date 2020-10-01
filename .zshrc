@@ -1,18 +1,12 @@
-source $HOME/.antigen.zsh
-antigen use oh-my-zsh
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle command-not-found
+export ZSH="/home/thetinygoat/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="true"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-antigen theme robbyrussell
-
-# Tell Antigen that you're done.
-antigen apply
-
+# User configuration
 export GOPATH=$HOME/Go
 export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$GOPATH/bin
+
