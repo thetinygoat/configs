@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export GOPATH=$HOME/Go
 export GO111MODULE=on
-export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/.local/bin
 
 # React Native settings
 export ANDROID_HOME=$HOME/Android/Sdk
