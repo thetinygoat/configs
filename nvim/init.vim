@@ -11,7 +11,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
 " Initialize plugin system
 call plug#end()
@@ -38,7 +37,7 @@ set clipboard=unnamedplus   " use system clipboard
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 " turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 set ignorecase          " case insensitive search
 set wildignorecase      " case insensitive tab completion
 
