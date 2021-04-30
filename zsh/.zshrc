@@ -21,8 +21,8 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH="$PATH:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/.local/bin:$NPM_GLOBAL/bin:$FLUTTER_PATH/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
 
 # Load functions
-source "$HOME/Configs/zsh/functions/rsync.sh"
-source "$HOME/Configs/zsh/functions/python.sh"
+source "$HOME/Dotfiles/zsh/functions/rsync.sh"
+source "$HOME/Dotfiles/zsh/functions/python.sh"
 
 
 
