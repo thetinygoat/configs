@@ -1,3 +1,10 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "json" ,"rust", "go", "json"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "json",
+    "rust",
+    "go",
+    "json"
+  ]
 }
