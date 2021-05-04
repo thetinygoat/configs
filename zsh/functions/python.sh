@@ -2,7 +2,7 @@
 VENV_ROOT_DIR=$HOME/.venvs
 
 # create a new virtual evt.
-cv(){
+cvenv(){
     # check if $VENV_ROOT_DIR exists
     if [ ! -d "$VENV_ROOT_DIR" ];
     then
@@ -30,7 +30,7 @@ cv(){
 }
 
 # list all virtual evts.
-lv(){
+lvenv(){
     # check if $VENV_ROOT_DIR exists
     if [ ! -d "$VENV_ROOT_DIR" ];
     then
@@ -41,7 +41,7 @@ lv(){
 }
 
 # activate a virtual evt.
-av(){
+avenv(){
     # check if $VENV_ROOT_DIR exists
     if [ ! -d "$VENV_ROOT_DIR" ];
     then
@@ -69,7 +69,7 @@ av(){
 }
 
 # deactivate current virtual env
-dv(){
+dvenv(){
     if [[ -z "${VIRTUAL_ENV}" ]];
     then
         echo "No virtual environments are currently active"
@@ -81,7 +81,7 @@ dv(){
 }
 
 # remove a virtual env
-rv(){
+rvenv(){
     # check if $VENV_ROOT_DIR exists
     if [ ! -d "$VENV_ROOT_DIR" ];
     then

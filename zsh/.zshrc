@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Oh-my-zsh config
 export ZSH="/home/thetinygoat/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 HYPHEN_INSENSITIVE="true"
@@ -16,13 +17,13 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
 export GOPATH=$HOME/.go
 export GO111MODULE=on
 export NPM_GLOBAL=$HOME/.npm-global
-export FLUTTER_PATH=$HOME/.flutter-sdk
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH="$PATH:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/.local/bin:$NPM_GLOBAL/bin:$FLUTTER_PATH/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
 
 # Load functions
 source "$HOME/Dotfiles/zsh/functions/rsync.sh"
 source "$HOME/Dotfiles/zsh/functions/python.sh"
+source "$HOME/Dotfiles/zsh/functions/postgres.sh"
 
 
 
